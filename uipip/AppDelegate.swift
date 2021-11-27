@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  uipip
 //
-//  Created by 漆原 明博/ Urushihara Akihiro on 2021/11/27.
+//  Created by Akihiro Urushihara on 2021/11/27.
 //
 
 import UIKit

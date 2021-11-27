@@ -13,6 +13,12 @@
 		71205CC027523230004779DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71205CBE27523230004779DA /* Main.storyboard */; };
 		71205CC227523232004779DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71205CC127523232004779DA /* Assets.xcassets */; };
 		71205CC527523232004779DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71205CC327523232004779DA /* LaunchScreen.storyboard */; };
+		71205CD0275232C0004779DA /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71205CCF275232C0004779DA /* AVKit.framework */; };
+		71205CD2275232C8004779DA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71205CD1275232C8004779DA /* AVFoundation.framework */; };
+		71205CD6275232E8004779DA /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71205CD5275232E8004779DA /* UIView+.swift */; };
+		71205CDA2752344C004779DA /* VideoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71205CD92752344C004779DA /* VideoProvider.swift */; };
+		71205CF327528057004779DA /* Data+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71205CF227528057004779DA /* Data+.swift */; };
+		71205CF5275280AD004779DA /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71205CF4275280AD004779DA /* UIImage+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		71205CC127523232004779DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71205CC427523232004779DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71205CC627523232004779DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71205CCF275232C0004779DA /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		71205CD1275232C8004779DA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		71205CD5275232E8004779DA /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		71205CD92752344C004779DA /* VideoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoProvider.swift; sourceTree = "<group>"; };
+		71205CF227528057004779DA /* Data+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+.swift"; sourceTree = "<group>"; };
+		71205CF4275280AD004779DA /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71205CD2275232C8004779DA /* AVFoundation.framework in Frameworks */,
+				71205CD0275232C0004779DA /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +56,7 @@
 			children = (
 				71205CB727523230004779DA /* uipip */,
 				71205CB627523230004779DA /* Products */,
+				71205CCE275232C0004779DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +74,25 @@
 				71205CB827523230004779DA /* AppDelegate.swift */,
 				71205CBA27523230004779DA /* SceneDelegate.swift */,
 				71205CBC27523230004779DA /* ViewController.swift */,
+				71205CD92752344C004779DA /* VideoProvider.swift */,
+				71205CF4275280AD004779DA /* UIImage+.swift */,
+				71205CD5275232E8004779DA /* UIView+.swift */,
+				71205CF227528057004779DA /* Data+.swift */,
 				71205CBE27523230004779DA /* Main.storyboard */,
 				71205CC127523232004779DA /* Assets.xcassets */,
 				71205CC327523232004779DA /* LaunchScreen.storyboard */,
 				71205CC627523232004779DA /* Info.plist */,
 			);
 			path = uipip;
+			sourceTree = "<group>";
+		};
+		71205CCE275232C0004779DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71205CD1275232C8004779DA /* AVFoundation.framework */,
+				71205CCF275232C0004779DA /* AVKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +167,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				71205CBD27523230004779DA /* ViewController.swift in Sources */,
+				71205CF5275280AD004779DA /* UIImage+.swift in Sources */,
 				71205CB927523230004779DA /* AppDelegate.swift in Sources */,
+				71205CDA2752344C004779DA /* VideoProvider.swift in Sources */,
+				71205CF327528057004779DA /* Data+.swift in Sources */,
 				71205CBB27523230004779DA /* SceneDelegate.swift in Sources */,
+				71205CD6275232E8004779DA /* UIView+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +321,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V3KZ4SQW2N;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = uipip/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -317,7 +349,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V3KZ4SQW2N;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = uipip/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
