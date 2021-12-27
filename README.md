@@ -1,3 +1,8 @@
+**This demo app is now available as a Cocoapods library.**  
+Please refer to **[UIPiPView](https://github.com/uakihir0/UIPiPView).**
+
+---
+
 [> 日本語](./README_ja.md)
 
 # UIPiPDemo
